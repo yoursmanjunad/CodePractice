@@ -1,0 +1,26 @@
+package myPackage;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Driver Load
+		//Connection 
+		//Statement create
+		//Execute Statement
+		//close connection
+		
+		//Loading driver
+		try {
+			String url = "jdbc:mysql://127.0.0.1:3306/?user=root";
+			String userName = "root";
+			String password = "Manju";
+			Connection con = DriverManager.getConnection(url,userName,password);		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
